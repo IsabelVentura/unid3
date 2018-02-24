@@ -1,0 +1,25 @@
+$def with(servicios, message)
+<h3>
+    <a href="/servicios">servicios</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_servicio" id="id_servicio" value="$servicios.id_servicio" />
+
+    <div class="form-group">
+    <label for="servicio">servicio</label>
+    <input required id="servicio" type="text" class="form-control" name="servicio" size="30" value="$servicios.servicio"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

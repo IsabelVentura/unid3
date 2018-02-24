@@ -1,0 +1,32 @@
+$def with(facturas, message)
+<h3>
+    <a href="/facturas">facturas</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_factura" id="id_factura" value="$facturas.id_factura" />
+
+    <div class="form-group">
+    <label for="no_factura">no_factura</label>
+    <input readonly id="no_factura" type="text" class="form-control" name="no_factura" size="30" value="$facturas.no_factura"/>
+</div><div class="form-group">
+    <label for="fecha">fecha</label>
+    <input readonly id="fecha" type="text" class="form-control" name="fecha" size="30" value="$facturas.fecha"/>
+</div><div class="form-group">
+    <label for="costo">costo</label>
+    <input readonly id="costo" type="text" class="form-control" name="costo" size="30" value="$facturas.costo"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,21 @@
+$def with(facturas)
+<h3>
+    <a href="/facturas">facturas</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>facturas</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in facturas:
+        <tr>
+            <td><a href='/facturas/view/$item.id_factura'>$item.id_factura</a></td>
+            <td><a href='/facturas/edit/$item.id_factura'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/facturas/delete/$item.id_factura'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

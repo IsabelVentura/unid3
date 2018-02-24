@@ -1,0 +1,5 @@
+'/servicios', 'application.controllers.servicios.index.Index',
+'/servicios/view/(.+)', 'application.controllers.servicios.view.View',
+'/servicios/edit/(.+)', 'application.controllers.servicios.edit.Edit',
+'/servicios/delete/(.+)', 'application.controllers.servicios.delete.Delete',
+'/servicios/insert', 'application.controllers.servicios.insert.Insert',

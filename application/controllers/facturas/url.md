@@ -1,0 +1,5 @@
+'/facturas', 'application.controllers.facturas.index.Index',
+'/facturas/view/(.+)', 'application.controllers.facturas.view.View',
+'/facturas/edit/(.+)', 'application.controllers.facturas.edit.Edit',
+'/facturas/delete/(.+)', 'application.controllers.facturas.delete.Delete',
+'/facturas/insert', 'application.controllers.facturas.insert.Insert',
